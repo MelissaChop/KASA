@@ -1,0 +1,38 @@
+.homePage{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.imgR{
+    display: block;
+    width: 1240px;
+height: 223px;
+border-radius: 25px  25px;
+}
+
+.texteInImage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    top: 50%;
+  left: 50%;
+
+  height: 68px;
+  width:705px;
+  padding: 78px 262px 77px 273px;
+  margin: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px  25px;
+
+}
+
