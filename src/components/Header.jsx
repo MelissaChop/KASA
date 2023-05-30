@@ -7,15 +7,15 @@ import "../styles/Header.scss"
 function Header() {
     return (
         <div className="barre">
-            <div>
-            <img src={imgK} alt="K" />
-            <img src={img} alt="Maison" />
-            <img src={imgS} alt="S" />
-            <img src={imgA} alt="" />
+            <div className="LogoKasa">
+            <img src={imgK} alt="K" className="K"/>
+            <img src={img} alt="Maison" className="autreLettre"/>
+            <img src={imgS} alt="S" className="autreLettre"/>
+            <img src={imgA} alt="A" className="autreLettre"/>
             </div>
         <nav className="liens">
-            <p className="accueil">Accueil</p>
-            <p className="about">A propos</p>
+            <a href="#" className="accueil">Accueil</a>
+            <a href="#" className="about">A propos</a>
     </nav>
 </div>
     )
