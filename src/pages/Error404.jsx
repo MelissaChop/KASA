@@ -1,14 +1,12 @@
 import "../styles/Error404.scss"
-//import Footer from "../components/Footer"
-//import Header from "../components/Header"
 
 function Error404(){
-    return <div>
-        {/*<Header/>*/}
+    return <div className="pageError">
+      
         <p className="Err404">404</p>
-        <p>Oups! La page que vous demandez n'existe pas!</p>
-      {/*}  <a href = {"#"}>Retourner sur la page d'acceuil</a>*/}
-        {/*<Footer/>*/}
+        <p className="textError">Oups! La page que vous demandez n'existe pas!</p>
+       <a href = "#" className="lien">Retourner sur la page d'accueil</a>
+        
     </div>
 }
 export default Error404

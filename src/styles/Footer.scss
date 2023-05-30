@@ -1,4 +1,5 @@
 .footer{
+    max-height: 209px;
     min-height: 114px;
     max-width: 100%;
     background-color: black;
@@ -12,7 +13,8 @@
     max-height: 40px;
 }
 
-.text{
+.textFooter{
     color: white;
     max-height: 46px;
+    font-family: 'Montserrat', sans-serif;
 }
