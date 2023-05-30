@@ -6,13 +6,11 @@ function Header() {
     return (
         <div className="barre">
             
-            <img src={logoHeader} alt="logo" className="logo"/>
+            <img src={logoHeader} alt="logo" className="LogoHeader"/>
        
-        
-        <nav className="liens">
             <a href="#" className="accueil">Accueil</a>
             <a href="#" className="about">A propos</a>
-    </nav>
+
 </div>
     )
 }

@@ -1,51 +1,38 @@
 .barre{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
     margin: 40px 100px;
     max-width: 100%;
     max-height: 171px;
 }
 
-.LogoKasa{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-max-width: 62px;
+.LogoHeader{
+    max-width: 122px;
+    max-height: 698px;
+    padding-right: 70%;
 }
 
-.liens{
-display: flex;
-justify-content: space-between;
-align-self: center;
-font-family: 'Montserrat', sans-serif;
-font-weight: 500;
-color: #FF6060;
-min-width: 21.5%;
-font-size: 24px;
-max-height: 24px;
-text-decoration: none;
-}
-
-.about{
-display: flex;
-flex-wrap: nowrap;
-text-decoration: none;
-color: #FF6060;
-margin-left: 4%;
-}
-
-.about:hover{
-    border-bottom: 1px solid #FF6060;
-    padding-bottom: 25px;
-}
 
 .accueil{
     text-decoration: none;
     color: #FF6060;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-right: 4%;
 }
 
 .accueil:hover{
+    border-bottom: 1px solid #FF6060;
+    padding-bottom: 25px;
+}
+
+
+.about{
+    text-decoration: none;
+    color: #FF6060;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.about:hover{
     border-bottom: 1px solid #FF6060;
     padding-bottom: 25px;
 }
