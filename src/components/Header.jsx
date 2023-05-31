@@ -4,14 +4,14 @@ import "../styles/Header.css"
  
 function Header() {
     return (
-        <div className="barre">
+        <nav className="barre">
             
             <img src={logoHeader} alt="logo" className="LogoHeader"/>
        
             <Link to="/" className="accueil">Accueil</Link>
             <Link to="/About" className="about">A propos</Link>
 
-</div>
+</nav>
     )
 }
 
