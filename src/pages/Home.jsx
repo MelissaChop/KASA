@@ -1,13 +1,16 @@
-import Banner from "../assets/banner.png"
-import "../styles/Home.scss"
+import "../styles/Home.css"
+import Header from "../components/Header";
+import Banner from "../components/Banner"
+import Footer from "../components/Footer";
 
 function Home() {
  
 
   return (
-    <div className="homePage">
-      <img src={Banner} alt="Rochets" className="imgR" />
-      <p className="texteInImage">Chez vous, partout et ailleurs</p>
+    <div >
+        <Header/>
+        <Banner/>
+        <Footer/>
     </div>
   );
 }

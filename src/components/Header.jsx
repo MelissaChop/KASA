@@ -1,6 +1,6 @@
 import logoHeader from "../assets/header_logo.png"
-
-import "../styles/Header.scss"
+import { Link } from "react-router-dom";
+import "../styles/Header.css"
  
 function Header() {
     return (
@@ -8,8 +8,8 @@ function Header() {
             
             <img src={logoHeader} alt="logo" className="LogoHeader"/>
        
-            <a href="#" className="accueil">Accueil</a>
-            <a href="#" className="about">A propos</a>
+            <Link to="/" className="accueil">Accueil</Link>
+            <Link to="/About" className="about">A propos</Link>
 
 </div>
     )

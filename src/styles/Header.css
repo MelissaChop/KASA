@@ -1,0 +1,34 @@
+.barre {
+  margin: 40px 20px 40px 50px;
+  max-width: 100%;
+  max-height: 171px;
+}
+
+.LogoHeader {
+  max-width: 122px;
+  max-height: 698px;
+  padding-right: 70%;
+}
+
+.accueil {
+  text-decoration: none;
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-right: 4%;
+}
+
+.accueil:hover {
+  border-bottom: 1px solid #ff6060;
+}
+
+.about {
+  text-decoration: none;
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.about:hover {
+  border-bottom: 1px solid #ff6060;
+}
