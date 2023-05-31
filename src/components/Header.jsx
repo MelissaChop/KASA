@@ -1,5 +1,5 @@
 import logoHeader from "../assets/header_logo.png"
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/Header.css"
  
 function Header() {
@@ -8,8 +8,8 @@ function Header() {
             
             <img src={logoHeader} alt="logo" className="LogoHeader"/>
        
-            <Link to="/" className="accueil">Accueil</Link>
-            <Link to="/About" className="about">A propos</Link>
+            <NavLink to="/" className="accueil">Accueil</NavLink>
+            <NavLink to="/About" className="about">A propos</NavLink>
 
 </nav>
     )

@@ -18,7 +18,7 @@
   margin-right: 4%;
 }
 
-.accueil:hover {
+.accueil.active {
   border-bottom: 1px solid #ff6060;
 }
 
@@ -29,6 +29,6 @@
   font-weight: 500;
 }
 
-.about:hover {
+.about.active {
   border-bottom: 1px solid #ff6060;
 }
