@@ -1,8 +1,8 @@
 import style from "./Collapse.module.css";
 import flecheBas from "../../assets/Bas.png";
-import { useState } from "react";
+import React, { useState } from "react";
 
-function Collapse({ about }) {
+function Collapse(props) {
   const [aboutState, setAboutState] = useState(false);
   const toggleState = () => {
     setAboutState(!aboutState);
@@ -12,11 +12,12 @@ function Collapse({ about }) {
   return (
     <div className={style.Container}>
       <div className={style.Titre} onClick={toggleState}>
-        <p>{about.title}</p>
+        <p>{props.collapseTitle}</p>
         <img src={flecheBas} alt="flecheBas" />
       </div>
-      <div>{about.content}</div>
+      <div>{props.collapseContent}</div>
     </div>
   );
 }
+
 export default Collapse;
