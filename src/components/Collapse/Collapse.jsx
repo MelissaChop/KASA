@@ -1,26 +1,22 @@
-import style from "./Collapse.module.css"
-import flecheBas from "../../assets/Bas.png"
-import { useState } from "react"
+import style from "./Collapse.module.css";
+import flecheBas from "../../assets/Bas.png";
+import { useState } from "react";
 
-export default function Collapse({about}){
+function Collapse({ about }) {
+  const [aboutState, setAboutState] = useState(false);
+  const toggleState = () => {
+    setAboutState(!aboutState);
+    console.log(aboutState);
+  };
 
-
-const [aboutState, setAboutState] = useState(false);
-    const toggleState = () => {
-        setAboutState(!aboutState)
-        console.log(aboutState)
-    }
-
-return (
+  return (
     <div className={style.Container}>
-        <div className={style.Titre} onClick={toggleState}>
-            <p>
-                {about.title}
-            </p>
-            <img src={flecheBas} alt="flecheBas" />
-        </div>
-        <div>{about.content}</div>
+      <div className={style.Titre} onClick={toggleState}>
+        <p>{about.title}</p>
+        <img src={flecheBas} alt="flecheBas" />
+      </div>
+      <div>{about.content}</div>
     </div>
-
-)
+  );
 }
+export default Collapse;
