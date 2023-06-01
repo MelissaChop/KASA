@@ -1,0 +1,16 @@
+.Container {
+  width: 582px;
+}
+
+.Titre {
+  width: 582px;
+  height: 52px;
+  border-radius: 10px;
+  background-color: #ff6060;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 24px;
+  align-items: center;
+}

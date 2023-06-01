@@ -1,9 +1,12 @@
 import "../styles/About.css"
+import Collapse from "../components/Collapse/Collapse"
+import datasAbout from "../datas/aboutthat.json"
 
 function About (){
+    const myAbout= datasAbout[1]
     return(
-        <div>
-            <h1>About VIDE</h1>
+        <div >
+            <Collapse about= {myAbout} />
         </div>
     )
 }
