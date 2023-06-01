@@ -1,13 +1,12 @@
-import "./Banner.module.css";
+import style from "./Banner.module.css";
 
 function Banner(props) {
   return (
-    <div className="homePage">
-      <img src={props.imgBanner} alt={props.alt} className="imgBanner" />
-      <p className="texteBanner">{props.texteBanner}</p>
+    <div className={style.homePage}>
+      <img src={props.imgBanner} alt={props.alt} className={style.imgBanner} />
+      <p className={style.texteBanner}>{props.texteBanner}</p>
     </div>
   );
 }
 
 export default Banner;
-//Chez vous, partout et ailleurs
