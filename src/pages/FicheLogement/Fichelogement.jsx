@@ -11,11 +11,19 @@ function FicheLogement() {
       {dataLogement.map((logement, index) => (
         <div key={index}>
           <Carrousel logementPictures={logement.pictures} />
-          <Collapse
-            key={index}
-            collapseTitle={"Description"}
-            collapseContent={logement.description}
-          />
+
+          <section>
+            <Collapse
+              key={index}
+              collapseTitle={"Description"}
+              collapseContent={logement.description}
+            />
+            <Collapse
+              key={index}
+              collapseTitle={"equipements"}
+              collapseContent={logement.equipments}
+            />
+          </section>
         </div>
       ))}
     </div>
