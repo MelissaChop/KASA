@@ -3,12 +3,20 @@ import React from "react";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import dataLogement from "../../datas/logement.json";
 //import Error404 from "../Error404/Error404";
+import Collapse from "../../components/Collapse/Collapse";
 
 function FicheLogement() {
   return (
     <div>
       {dataLogement.map((logement, index) => (
-        <Carrousel key={index} logementPictures={logement.pictures} />
+        <div key={index}>
+          <Carrousel logementPictures={logement.pictures} />
+          <Collapse
+            key={index}
+            collapseTitle={"Description"}
+            collapseContent={logement.description}
+          />
+        </div>
       ))}
     </div>
   );
