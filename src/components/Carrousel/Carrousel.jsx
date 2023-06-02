@@ -22,7 +22,7 @@ function Carrousel({ logementPictures }) {
     <section
       style={{ backgroundImage: `url(${logementPictures[currentIndex]})` }}
       className={style.carousel}>
-      {logementPictures.length > 1 && (
+      {logementPictures.length > 1 ? (
         <>
           <img
             className={style.precedenteGauche}
@@ -40,6 +40,12 @@ function Carrousel({ logementPictures }) {
             {currentIndex + 1} / {logementPictures.length}
           </p>
         </>
+      ) : (
+        <img
+          className={style.singleImage}
+          src={logementPictures[0]}
+          alt="Logement"
+        />
       )}
     </section>
   );
