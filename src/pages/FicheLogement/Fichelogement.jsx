@@ -1,13 +1,17 @@
+import React from "react";
+//import { useParams } from "react-router-dom";
 import Carrousel from "../../components/Carrousel/Carrousel";
-import imgAppart from "../../datas/logement.json";
+import dataLogement from "../../datas/logement.json";
+//import Error404 from "../Error404/Error404";
 
 function FicheLogement() {
   return (
     <div>
-      {imgAppart.map((logement, index) => {
-        return <Carrousel key={index} logementPictures={logement.pictures} />;
-      })}
+      {dataLogement.map((logement, index) => (
+        <Carrousel key={index} logementPictures={logement.pictures} />
+      ))}
     </div>
   );
 }
+
 export default FicheLogement;
