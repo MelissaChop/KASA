@@ -11,6 +11,16 @@ function FicheLogement() {
       {dataLogement.map((logement, index) => (
         <div key={index}>
           <Carrousel logementPictures={logement.pictures} />
+          <div>
+            <h1>{logement.title}</h1>
+            <h2>{logement.location}</h2>
+            <p>{logement.tags}</p>
+          </div>
+
+          <aside>
+            <h2>{logement.host.name}</h2>
+            <img src={logement.host.picture} alt={logement.host.name} />
+          </aside>
 
           <section>
             <Collapse
