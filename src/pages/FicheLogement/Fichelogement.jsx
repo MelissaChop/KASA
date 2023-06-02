@@ -1,9 +1,8 @@
 import React from "react";
-//import { useParams } from "react-router-dom";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import dataLogement from "../../datas/logement.json";
-//import Error404 from "../Error404/Error404";
 import Collapse from "../../components/Collapse/Collapse";
+import Rating from "../../components/Rating/Rating"; // Ajout de l'importation du composant Rating
 
 function FicheLogement() {
   return (
@@ -22,6 +21,10 @@ function FicheLogement() {
             <img src={logement.host.picture} alt={logement.host.name} />
           </aside>
 
+          <aside>
+            <Rating rating={logement.rating} />
+          </aside>
+
           <section>
             <Collapse
               key={index}
@@ -30,7 +33,7 @@ function FicheLogement() {
             />
             <Collapse
               key={index}
-              collapseTitle={"equipements"}
+              collapseTitle={"Équipements"}
               collapseContent={logement.equipments}
             />
           </section>
