@@ -1,13 +1,30 @@
-.barre {
-  margin: 40px 20px 40px 50px;
+.blockBarre {
   max-width: 100%;
-  max-height: 171px;
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+  margin-bottom: 4.3%;
+}
+.barre {
+  justify-content: space-between;
+  /* margin: 40px 20px 40px 50px; */
+  width: 86%;
+  /* max-height: 7%; */
+  display: flex;
 }
 
 .LogoHeader {
-  max-width: 122px;
+  /*max-width: 122px;
   max-height: 698px;
-  padding-right: 70%;
+  padding-right: 70%;*/
+}
+
+.navBarre {
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: 20%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .accueil {
@@ -15,6 +32,7 @@
   color: #ff6060;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  font-size: 1.5em;
   margin-right: 4%;
 }
 
@@ -27,6 +45,7 @@
   color: #ff6060;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  font-size: 1.5em;
 }
 
 .about.active {

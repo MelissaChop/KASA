@@ -11,26 +11,29 @@ function Header() {
   };
 
   return (
-    <nav className={style.barre}>
-      <img src={logoHeader} alt="logo" className={style.LogoHeader} />
-
-      <NavLink
-        to="/"
-        className={`${style.accueil} ${
-          activeLink === "accueil" ? style.active : ""
-        }`}
-        onClick={() => handleLinkClick("accueil")}>
-        Accueil
-      </NavLink>
-      <NavLink
-        to="/About"
-        className={`${style.about} ${
-          activeLink === "about" ? style.active : ""
-        }`}
-        onClick={() => handleLinkClick("about")}>
-        A propos
-      </NavLink>
-    </nav>
+    <div className={style.blockBarre}>
+      <nav className={style.barre}>
+        <img src={logoHeader} alt="logo" className={style.LogoHeader} />
+        <div className={style.navBarre}>
+          <NavLink
+            to="/"
+            className={`${style.accueil} ${
+              activeLink === "accueil" ? style.active : ""
+            }`}
+            onClick={() => handleLinkClick("accueil")}>
+            Accueil
+          </NavLink>
+          <NavLink
+            to="/About"
+            className={`${style.about} ${
+              activeLink === "about" ? style.active : ""
+            }`}
+            onClick={() => handleLinkClick("about")}>
+            A propos
+          </NavLink>
+        </div>
+      </nav>
+    </div>
   );
 }
 

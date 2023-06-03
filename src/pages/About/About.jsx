@@ -11,9 +11,8 @@ function About() {
       <Banner imgBanner={imgBanner} />
       {datasAbout.map((about, index) => {
         return (
-          <div className={style.collapse}>
+          <div key={index} className={style.collapse}>
             <Collapse
-              key={index}
               collapseTitle={about.title}
               collapseContent={about.content}
             />
