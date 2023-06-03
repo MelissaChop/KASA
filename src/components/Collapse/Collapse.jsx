@@ -17,7 +17,9 @@ function Collapse(props) {
         {aboutState && <img src={flecheBas} alt="fleche Bas" />}
         {!aboutState && <img src={flecheHaut} alt="fleche Haut" />}
       </div>
-      {!aboutState && <div>{props.collapseContent}</div>}
+      {!aboutState && (
+        <div className={style.content}>{props.collapseContent}</div>
+      )}
     </div>
   );
 }

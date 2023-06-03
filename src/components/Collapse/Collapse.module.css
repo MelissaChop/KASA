@@ -1,10 +1,13 @@
 .Container {
-  width: 582px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Titre {
-  width: 582px;
-  height: 52px;
+  width: 71%;
+  max-height: 47px;
   border-radius: 10px;
   background-color: #ff6060;
   color: white;
@@ -13,4 +16,17 @@
   font-weight: 500;
   font-size: 24px;
   align-items: center;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content {
+  width: 71%;
+  padding: 2% 1.8% 1.5% 1%;
+  background-color: #f6f6f6;
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
 }

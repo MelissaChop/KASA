@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.module.css";
+import style from "./About.module.css";
 import Collapse from "../../components/Collapse/Collapse";
 import datasAbout from "../../datas/aboutthat.json";
 import Banner from "../../components/Banner/Banner";
@@ -11,11 +11,13 @@ function About() {
       <Banner imgBanner={imgBanner} />
       {datasAbout.map((about, index) => {
         return (
-          <Collapse
-            key={index}
-            collapseTitle={about.title}
-            collapseContent={about.content}
-          />
+          <div className={style.collapse}>
+            <Collapse
+              key={index}
+              collapseTitle={about.title}
+              collapseContent={about.content}
+            />
+          </div>
         );
       })}
     </div>
