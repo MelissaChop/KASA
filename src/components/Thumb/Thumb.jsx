@@ -1,12 +1,16 @@
-//import style from "./Thumb.module.css"
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import style from "./Thumb.module.css";
+import data from "../../datas/logement.json";
 
 function Thumb(props) {
+  const { id } = useParams();
+
+  const logement = data.find((logement) => logement.id === id);
+  console.log(id);
   return (
     <div className={style.blockCard}>
-      <Link to={`/FicheLogement/id`}>
+      <Link to={`/FicheLogement/${logement}`}>
         <img
           src={props.cardImg}
           alt={props.cardTitre}
@@ -17,4 +21,5 @@ function Thumb(props) {
     </div>
   );
 }
+
 export default Thumb;
