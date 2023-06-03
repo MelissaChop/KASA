@@ -20,8 +20,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 48px;
-  text-align: center;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
@@ -29,10 +31,11 @@
   top: 50%;
   left: 50%;
 
-  height: 68px;
   /*width: 705px;
   width: 100%;*/
   /*padding: 78px 262px 77px 273px;*/
+  width: 86%;
+  height: 100%;
   margin: 0%;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 25px 25px;

@@ -7,8 +7,8 @@ import Rating from "../../components/Rating/Rating"; // Ajout de l'importation d
 function FicheLogement() {
   return (
     <div>
-      {dataLogement.map((logement, index) => (
-        <div key={index}>
+      {dataLogement.map((logement) => (
+        <div key={logement.id}>
           <Carrousel logementPictures={logement.pictures} />
           <div>
             <h1>{logement.title}</h1>
@@ -27,12 +27,12 @@ function FicheLogement() {
 
           <section>
             <Collapse
-              key={index}
+              key={logement.id}
               collapseTitle={"Description"}
               collapseContent={logement.description}
             />
             <Collapse
-              key={index}
+              key={logement.id}
               collapseTitle={"Équipements"}
               collapseContent={logement.equipments}
             />

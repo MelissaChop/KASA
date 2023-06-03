@@ -1,13 +1,20 @@
 //import style from "./Thumb.module.css"
 import React from "react";
 import { Link } from "react-router-dom";
+import style from "./Thumb.module.css";
 
 function Thumb(props) {
   return (
-    <Link to={`/FicheLogement/id`}>
-      <img src={props.cardImg} alt={props.cardTitre} />
-      <h1>{props.cardTitre}</h1>
-    </Link>
+    <div className={style.blockCard}>
+      <Link to={`/FicheLogement/id`}>
+        <img
+          src={props.cardImg}
+          alt={props.cardTitre}
+          className={style.imgCard}
+        />
+        <h1 className={style.titreCard}>{props.cardTitre}</h1>
+      </Link>
+    </div>
   );
 }
 export default Thumb;

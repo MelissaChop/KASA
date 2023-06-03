@@ -1,0 +1,19 @@
+.blockCard {
+  /* max-width: 340px;
+  max-height: 340px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  object-fit: cover;*/
+}
+
+.blockThumb {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  justify-content: space-around;
+  max-width: 86%;
+  background-color: #f6f6f6;
+  margin-top: 43px;
+  border-radius: 25px;
+}

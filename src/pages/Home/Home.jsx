@@ -1,4 +1,4 @@
-import "./Home.module.css";
+import style from "./Home.module.css";
 import Banner from "../../components/Banner/Banner";
 import imgBanner from "../../assets/banner.png";
 import Thumb from "../../components/Thumb/Thumb";
@@ -12,15 +12,19 @@ function Home() {
         alt="Foret"
         texteBanner={"Chez vous, partout et ailleurs"}
       />
-      {Card.map((logement, index) => {
-        return (
-          <Thumb
-            key={index}
-            cardTitre={logement.title}
-            cardImg={logement.cover}
-          />
-        );
-      })}
+      <div className={style.blockThumb}>
+        {Card.map((logement) => {
+          return (
+            <div className={style.blockCard}>
+              <Thumb
+                key={logement.id}
+                cardTitre={logement.title}
+                cardImg={logement.cover}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
