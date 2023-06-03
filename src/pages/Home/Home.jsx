@@ -15,12 +15,8 @@ function Home() {
       <div className={style.blockThumb}>
         {Card.map((logement) => {
           return (
-            <div className={style.blockCard}>
-              <Thumb
-                key={logement.id}
-                cardTitre={logement.title}
-                cardImg={logement.cover}
-              />
+            <div className={style.blockCard} key={logement.id}>
+              <Thumb cardTitre={logement.title} cardImg={logement.cover} />
             </div>
           );
         })}

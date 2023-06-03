@@ -2,7 +2,7 @@ import React from "react";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import dataLogement from "../../datas/logement.json";
 import Collapse from "../../components/Collapse/Collapse";
-import Rating from "../../components/Rating/Rating"; // Ajout de l'importation du composant Rating
+import Rating from "../../components/Rating/Rating";
 
 function FicheLogement() {
   return (
@@ -27,12 +27,12 @@ function FicheLogement() {
 
           <section>
             <Collapse
-              key={logement.id}
+              key={`description_${logement.id}`}
               collapseTitle={"Description"}
               collapseContent={logement.description}
             />
             <Collapse
-              key={logement.id}
+              key={`equipments_${logement.id}`}
               collapseTitle={"Équipements"}
               collapseContent={logement.equipments}
             />

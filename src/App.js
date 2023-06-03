@@ -5,7 +5,7 @@ import Error404 from "./pages/Error404/Error404";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About";
-import FicheLogement from "./pages/FicheLogement/FicheLogement";
+import FicheLogement from "./pages/FicheLogement/Fichelogement";
 
 function App() {
   return (
