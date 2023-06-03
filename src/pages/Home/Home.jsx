@@ -6,7 +6,7 @@ import Card from "../../datas/logement";
 
 function Home() {
   return (
-    <div>
+    <div className={style.page}>
       <Banner
         imgBanner={imgBanner}
         alt="Foret"

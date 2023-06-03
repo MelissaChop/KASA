@@ -7,6 +7,12 @@
   object-fit: cover;*/
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .blockThumb {
   display: flex;
   flex-wrap: wrap;
