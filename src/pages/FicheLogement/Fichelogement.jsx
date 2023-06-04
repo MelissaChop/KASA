@@ -3,6 +3,7 @@ import Carrousel from "../../components/Carrousel/Carrousel";
 import dataLogement from "../../datas/logement.json";
 import Collapse from "../../components/Collapse/Collapse";
 import Rating from "../../components/Rating/Rating";
+import style from "./Fichelogement.module.css";
 
 function FicheLogement() {
   return (
@@ -10,22 +11,29 @@ function FicheLogement() {
       {dataLogement.map((logement) => (
         <div key={logement.id}>
           <Carrousel logementPictures={logement.pictures} />
-          <div>
-            <h1>{logement.title}</h1>
-            <h2>{logement.location}</h2>
-            <p>{logement.tags}</p>
-          </div>
 
-          <aside>
-            <h2>{logement.host.name}</h2>
-            <img src={logement.host.picture} alt={logement.host.name} />
-          </aside>
+          <section className={style.infos}>
+            <div className={style.information}>
+              <h1 className={style.titre}>{logement.title}</h1>
+              <h2 className={style.location}>{logement.location}</h2>
+              <p>{logement.tags}</p>
+            </div>
 
-          <aside>
-            <Rating rating={logement.rating} />
-          </aside>
+            <aside className={style.proprietaire}>
+              <h2 className={style.noms}>{logement.host.name}</h2>
+              <img
+                src={logement.host.picture}
+                alt={logement.host.name}
+                className={style.picture}
+              />
+            </aside>
 
-          <section>
+            <aside>
+              <Rating rating={logement.rating} />
+            </aside>
+          </section>
+
+          <section className={style.collapse}>
             <Collapse
               key={`description_${logement.id}`}
               collapseTitle={"Description"}
