@@ -1,5 +1,22 @@
-.suivanteDroite {
+.section {
+  max-width: 86%;
+  border-radius: 25px;
 }
 
-.precedenteGauche {
+.carrousel {
+  display: flex;
+  flex-direction: column;
+}
+
+.fleche {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number {
+  align-self: center;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: white;
 }

@@ -20,25 +20,29 @@ function Carrousel({ logementPictures }) {
 
   return (
     <section
-      style={{ backgroundImage: `url(${logementPictures[currentIndex]})` }}
-      className={style.carousel}>
+      className={style.section}
+      style={{ backgroundImage: `url(${logementPictures[currentIndex]})` }}>
       {logementPictures.length > 1 ? (
         <>
-          <img
-            className={style.precedenteGauche}
-            src={Gauche}
-            alt="Précédente"
-            onClick={prevImg}
-          />
-          <img
-            className={style.suivanteDroite}
-            src={Droite}
-            alt="Suivante"
-            onClick={nextImg}
-          />
-          <p className="slideCount">
-            {currentIndex + 1} / {logementPictures.length}
-          </p>
+          <div className={style.carrousel}>
+            <div className={style.fleche}>
+              <img
+                className={style.precedenteGauche}
+                src={Gauche}
+                alt="Précédente"
+                onClick={prevImg}
+              />
+              <img
+                className={style.suivanteDroite}
+                src={Droite}
+                alt="Suivante"
+                onClick={nextImg}
+              />
+            </div>
+            <p className={style.number}>
+              {currentIndex + 1} / {logementPictures.length}
+            </p>
+          </div>
         </>
       ) : (
         <img
