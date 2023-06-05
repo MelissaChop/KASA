@@ -21,7 +21,7 @@ function FicheLogement() {
             <div className={style.information}>
               <h1 className={style.titre}>{logement.title}</h1>
               <h2 className={style.location}>{logement.location}</h2>
-              <p>{logement.tags.join(", ")}</p>
+              <p>{logement.tags}</p>
             </div>
 
             <aside className={style.proprietaire}>
@@ -40,14 +40,14 @@ function FicheLogement() {
 
           <section className={style.collapse}>
             <Collapse
-              key={`description_${logement.id}`}
+              key={`description`}
               collapseTitle={"Description"}
               collapseContent={logement.description}
             />
             <Collapse
-              key={`equipments_${logement.id}`}
+              key={`equipments`}
               collapseTitle={"Équipements"}
-              collapseContent={logement.equipments.join(", ")}
+              collapseContent={logement.equipments}
             />
           </section>
         </div>
