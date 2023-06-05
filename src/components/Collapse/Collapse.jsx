@@ -4,7 +4,7 @@ import flecheHaut from "../../assets/Haut.png";
 import React, { useState } from "react";
 
 function Collapse(props) {
-  const [aboutState, setAboutState] = useState(false);
+  const [aboutState, setAboutState] = useState(true);
   const toggleState = () => {
     setAboutState(!aboutState);
     //console.log(aboutState);
