@@ -8,8 +8,7 @@
 
 .imgBanner {
   display: block;
-  max-width: 86%;
-  /*width: 1240px;*/
+  max-width: 100%;
   height: 22%;
   border-radius: 25px 25px;
 }
@@ -24,19 +23,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
-
-  top: 50%;
-  left: 50%;
-
-  /*width: 705px;
-  width: 100%;*/
-  /*padding: 78px 262px 77px 273px;*/
-  width: 86%;
+  width: 100%; /* Ajustez la largeur pour correspondre à l'élément .imgBanner */
   height: 100%;
-  margin: 0%;
+  margin: 0;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 25px 25px;
 }
