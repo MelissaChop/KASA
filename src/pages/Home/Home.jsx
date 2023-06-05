@@ -16,7 +16,11 @@ function Home() {
         {Card.map((logement) => {
           return (
             <div className={style.blockCard} key={logement.id}>
-              <Thumb cardTitre={logement.title} cardImg={logement.cover} />
+              <Thumb
+                cardId={logement.id}
+                cardTitre={logement.title}
+                cardImg={logement.cover}
+              />
             </div>
           );
         })}
