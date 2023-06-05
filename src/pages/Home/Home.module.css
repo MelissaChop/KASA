@@ -14,11 +14,12 @@
 }
 
 .blockThumb {
+  gap: 3%;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  justify-content: space-around;
-  max-width: 86%;
+  justify-content: center;
+  /* justify-content: space-around; */
+  max-width: 90%;
   background-color: #f6f6f6;
   margin-top: 43px;
   border-radius: 25px;
