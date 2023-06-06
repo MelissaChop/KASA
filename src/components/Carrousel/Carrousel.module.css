@@ -5,8 +5,9 @@
 
 .carrousel {
   display: flex;
-  flex-direction: column;
   min-height: 415px;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .fleche {
@@ -20,4 +21,9 @@
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: white;
+}
+
+.singleImage {
+  width: 100%;
+  height: 100%;
 }
