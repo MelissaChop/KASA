@@ -55,7 +55,11 @@ function FicheLogement() {
             <Collapse
               key={`equipments`}
               collapseTitle={"Équipements"}
-              collapseContent={logement.equipments}
+              collapseContent={logement.equipments.map((equipment, index) => (
+                <li key={index} className={style.equipement}>
+                  {equipment}
+                </li>
+              ))}
             />
           </section>
         </div>

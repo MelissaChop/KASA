@@ -78,3 +78,7 @@
   display: flex;
   margin-top: 24px;
 }
+
+.equipement {
+  list-style-type: none;
+}
