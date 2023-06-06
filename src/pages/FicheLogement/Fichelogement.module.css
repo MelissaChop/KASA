@@ -1,7 +1,20 @@
+.page {
+  margin: auto;
+}
+
+.infosLogement {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
 .infos {
   display: flex;
   justify-content: space-between;
-  max-width: 86%;
+  width: 100%;
 }
 
 .titre {

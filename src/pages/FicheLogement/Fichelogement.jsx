@@ -12,36 +12,37 @@ function FicheLogement() {
   const logement = dataLogement.find((logement) => logement.id === id);
 
   return (
-    <div>
+    <div className={style.page}>
       {logement && (
         <div key={logement.id}>
-          <Carrousel logementPictures={logement.pictures} />
-
-          <section className={style.infos}>
-            <div className={style.information}>
-              <h1 className={style.titre}>{logement.title}</h1>
-              <h2 className={style.location}>{logement.location}</h2>
-              <div>
-                {logement.tags.map((tag, index) => (
-                  <span key={index} className={style.tag}>
-                    {tag}{" "}
-                  </span>
-                ))}
+          <section className={style.infosLogement}>
+            <Carrousel logementPictures={logement.pictures} />
+            <div className={style.infos}>
+              <div className={style.information}>
+                <h1 className={style.titre}>{logement.title}</h1>
+                <h2 className={style.location}>{logement.location}</h2>
+                <div>
+                  {logement.tags.map((tag, index) => (
+                    <span key={index} className={style.tag}>
+                      {tag}{" "}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className={style.divProprietaire}>
-              <aside className={style.proprietaire}>
-                <h2 className={style.noms}>{logement.host.name}</h2>
-                <img
-                  src={logement.host.picture}
-                  alt={logement.host.name}
-                  className={style.picture}
-                />
-              </aside>
+              <div className={style.divProprietaire}>
+                <aside className={style.proprietaire}>
+                  <h2 className={style.noms}>{logement.host.name}</h2>
+                  <img
+                    src={logement.host.picture}
+                    alt={logement.host.name}
+                    className={style.picture}
+                  />
+                </aside>
 
-              <aside>
-                <Rating rating={logement.rating} className={style.rating} />
-              </aside>
+                <aside>
+                  <Rating rating={logement.rating} className={style.rating} />
+                </aside>
+              </div>
             </div>
           </section>
 

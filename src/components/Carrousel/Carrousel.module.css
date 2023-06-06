@@ -1,11 +1,12 @@
 .section {
-  max-width: 86%;
+  width: 100%;
   border-radius: 25px;
 }
 
 .carrousel {
   display: flex;
   flex-direction: column;
+  min-height: 415px;
 }
 
 .fleche {
