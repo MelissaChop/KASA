@@ -63,14 +63,5 @@
 
 .collapse {
   display: flex;
-  flex-wrap: nowrap;
-  min-width: 100%;
-}
-
-.collapseDescription {
-  min-width: 50%;
-}
-
-.collapseEquipement {
-  min-width: 50%;
+  margin-top: 24px;
 }

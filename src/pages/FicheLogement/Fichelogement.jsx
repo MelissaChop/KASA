@@ -50,13 +50,11 @@ function FicheLogement() {
               key={`description`}
               collapseTitle={"Description"}
               collapseContent={logement.description}
-              className={style.collapseDescription}
             />
             <Collapse
               key={`equipments`}
               collapseTitle={"Équipements"}
               collapseContent={logement.equipments}
-              className={style.collapseEquipement}
             />
           </section>
         </div>
