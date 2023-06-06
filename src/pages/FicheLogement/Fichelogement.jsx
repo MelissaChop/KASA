@@ -21,7 +21,11 @@ function FicheLogement() {
             <div className={style.information}>
               <h1 className={style.titre}>{logement.title}</h1>
               <h2 className={style.location}>{logement.location}</h2>
-              <p>{logement.tags}</p>
+              <div>
+                {logement.tags.map((tag, index) => (
+                  <span key={index}>{tag}</span>
+                ))}
+              </div>
             </div>
 
             <aside className={style.proprietaire}>
