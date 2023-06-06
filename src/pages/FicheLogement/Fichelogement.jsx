@@ -23,23 +23,26 @@ function FicheLogement() {
               <h2 className={style.location}>{logement.location}</h2>
               <div>
                 {logement.tags.map((tag, index) => (
-                  <span key={index}>{tag}</span>
+                  <span key={index} className={style.tag}>
+                    {tag}{" "}
+                  </span>
                 ))}
               </div>
             </div>
+            <div className={style.divProprietaire}>
+              <aside className={style.proprietaire}>
+                <h2 className={style.noms}>{logement.host.name}</h2>
+                <img
+                  src={logement.host.picture}
+                  alt={logement.host.name}
+                  className={style.picture}
+                />
+              </aside>
 
-            <aside className={style.proprietaire}>
-              <h2 className={style.noms}>{logement.host.name}</h2>
-              <img
-                src={logement.host.picture}
-                alt={logement.host.name}
-                className={style.picture}
-              />
-            </aside>
-
-            <aside>
-              <Rating rating={logement.rating} />
-            </aside>
+              <aside>
+                <Rating rating={logement.rating} className={style.rating} />
+              </aside>
+            </div>
           </section>
 
           <section className={style.collapse}>
@@ -47,11 +50,13 @@ function FicheLogement() {
               key={`description`}
               collapseTitle={"Description"}
               collapseContent={logement.description}
+              className={style.collapseDescription}
             />
             <Collapse
               key={`equipments`}
               collapseTitle={"Équipements"}
               collapseContent={logement.equipments}
+              className={style.collapseEquipement}
             />
           </section>
         </div>
