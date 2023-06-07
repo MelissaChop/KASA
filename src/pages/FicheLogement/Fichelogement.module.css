@@ -82,6 +82,7 @@
 .collapse {
   display: flex;
   margin-top: 24px;
+  gap: 5%;
 }
 
 .equipement {
