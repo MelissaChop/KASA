@@ -1,19 +1,39 @@
 .section {
   width: 100%;
+  min-height: 415px;
   border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgContainerMulti {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carrousel {
+  width: 100%;
+  min-height: 100%;
   display: flex;
-  min-height: 415px;
-  justify-content: center;
-  flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
+  align-content: end;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin: 2%;
 }
 
 .fleche {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 .number {
@@ -22,5 +42,19 @@
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: white;
-  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /*margin-top: 7.5%;*/
+}
+
+.imgContainerSingle {
+  max-height: 100%;
+}
+
+.singleImage {
+  width: 100%;
+  border-radius: 25px;
+  max-height: 415px;
+  object-fit: cover;
 }

@@ -19,39 +19,45 @@ function Carrousel({ logementPictures }) {
   };
 
   return (
-    <section
-      className={style.section}
-      style={{ backgroundImage: `url(${logementPictures[currentIndex]})` }}>
-      {logementPictures.length > 1 ? (
-        <>
-          <div className={style.carrousel}>
-            <div className={style.fleche}>
-              <img
-                className={style.precedenteGauche}
-                src={Gauche}
-                alt="Précédente"
-                onClick={prevImg}
-              />
-              <img
-                className={style.suivanteDroite}
-                src={Droite}
-                alt="Suivante"
-                onClick={nextImg}
-              />
+    <div className={style.imgContainerMulti}>
+      <section
+        className={style.section}
+        style={{ backgroundImage: `url(${logementPictures[currentIndex]})` }}>
+        {logementPictures.length > 1 ? (
+          <>
+            <div className={style.carrousel}>
+              <div className={style.fleche}>
+                <img
+                  className={style.precedenteGauche}
+                  src={Gauche}
+                  alt="Précédente"
+                  onClick={prevImg}
+                />
+                <img
+                  className={style.suivanteDroite}
+                  src={Droite}
+                  alt="Suivante"
+                  onClick={nextImg}
+                />
+              </div>
+              <div className={style.number}>
+                <p>
+                  {currentIndex + 1} / {logementPictures.length}
+                </p>
+              </div>
             </div>
-            <p className={style.number}>
-              {currentIndex + 1} / {logementPictures.length}
-            </p>
+          </>
+        ) : (
+          <div className={style.imgContainerSingle}>
+            <img
+              className={style.singleImage}
+              src={logementPictures[0]}
+              alt="Logement"
+            />
           </div>
-        </>
-      ) : (
-        <img
-          className={style.singleImage}
-          src={logementPictures[0]}
-          alt="Logement"
-        />
-      )}
-    </section>
+        )}
+      </section>
+    </div>
   );
 }
 
