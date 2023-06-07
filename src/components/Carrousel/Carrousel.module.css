@@ -23,7 +23,7 @@
   min-height: 100%;
   display: flex;
   align-items: center;
-  align-content: end;
+  align-content: flex-end;
   flex-wrap: wrap;
   align-content: space-between;
   margin: 2%;
