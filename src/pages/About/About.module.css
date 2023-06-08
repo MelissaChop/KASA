@@ -21,7 +21,13 @@
   /*margin: 4%;*/
 }
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 1200px) {
+  .collapse {
+    min-width: 90%;
+  }
 }
 @media all and (max-width: 767px) {
+  .collapse {
+    min-width: 95%;
+  }
 }

@@ -14,8 +14,12 @@ function Collapse(props) {
     <div className={style.Container}>
       <div className={style.Titre} onClick={toggleState}>
         <p>{props.collapseTitle}</p>
-        {aboutState && <img src={flecheBas} alt="fleche Bas" />}
-        {!aboutState && <img src={flecheHaut} alt="fleche Haut" />}
+        {aboutState && (
+          <img src={flecheBas} alt="fleche Bas" className={style.fleche} />
+        )}
+        {!aboutState && (
+          <img src={flecheHaut} alt="fleche Haut" className={style.fleche} />
+        )}
       </div>
       {!aboutState && (
         <div className={style.content}>{props.collapseContent}</div>

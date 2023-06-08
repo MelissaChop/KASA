@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.fleche {
+  max-width: 24px;
+  max-height: 14px;
+}
+
 .Titre {
   max-height: 47px;
   border-radius: 5px;
@@ -28,6 +33,30 @@
 }
 
 @media all and (max-width: 991px) {
+  .fleche {
+    width: 20px;
+  }
+  .Titre {
+    font-size: 21px;
+    height: 35px;
+  }
+
+  .content {
+    font-size: 20px;
+    padding: 5%;
+  }
 }
 @media all and (max-width: 767px) {
+  .fleche {
+    width: 16px;
+  }
+  .Titre {
+    font-size: 13px;
+    height: 30px;
+  }
+
+  .content {
+    font-size: 12px;
+    padding: 5%;
+  }
 }
