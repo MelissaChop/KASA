@@ -8,7 +8,9 @@ import imgBanner from "../../assets/aboutBanner.png";
 function About() {
   return (
     <div className={style.page}>
-      <Banner imgBanner={imgBanner} texteBanner="" />
+      <div className={style.divBanner}>
+        <Banner imgBanner={imgBanner} texteBanner="" />
+      </div>
       {datasAbout.map((about, index) => {
         return (
           <div key={index} className={style.collapse}>

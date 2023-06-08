@@ -1,3 +1,10 @@
+.divBanner {
+  max-width: 100%;
+  min-height: 223px;
+  justify-content: center;
+  display: flex;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -34,5 +41,9 @@
     display: block;
     max-width: 95%;
     margin-top: 0px;
+  }
+  .divBanner {
+    max-height: 111px;
+    min-height: 111px;
   }
 }

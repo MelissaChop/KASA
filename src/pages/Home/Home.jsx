@@ -7,11 +7,13 @@ import Card from "../../datas/logement";
 function Home() {
   return (
     <div className={style.page}>
-      <Banner
-        imgBanner={imgBanner}
-        alt="Foret"
-        texteBanner={"Chez vous, partout et ailleurs"}
-      />
+      <div className={style.divBanner}>
+        <Banner
+          imgBanner={imgBanner}
+          alt="Foret"
+          texteBanner={"Chez vous, partout et ailleurs"}
+        />
+      </div>
       <div className={style.blockThumb}>
         {Card.map((logement) => {
           return (
