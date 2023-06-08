@@ -5,9 +5,11 @@ import style from "./Rating.module.css";
 
 function Rating({ rating }) {
   const fullStarCouleur = Array(5).fill(
-    <img src={starCouleur} alt="starCouleur" />
+    <img src={starCouleur} alt="starCouleur" className={style.etoile} />
   );
-  const fullStarBlanc = Array(5).fill(<img src={starBlanc} alt="starBlanc" />);
+  const fullStarBlanc = Array(5).fill(
+    <img src={starBlanc} alt="starBlanc" className={style.etoile} />
+  );
 
   return (
     <div className={style.rating}>

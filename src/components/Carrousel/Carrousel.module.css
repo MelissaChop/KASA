@@ -73,4 +73,7 @@
   .fleche {
     height: 20px;
   }
+  .section {
+    min-height: 255px;
+  }
 }

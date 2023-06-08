@@ -8,4 +8,11 @@
 @media all and (max-width: 991px) {
 }
 @media all and (max-width: 767px) {
+  .rating {
+    justify-content: flex-start;
+  }
+  .etoile {
+    max-width: 13px;
+    max-height: 13px;
+  }
 }
