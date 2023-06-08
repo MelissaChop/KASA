@@ -1,13 +1,14 @@
 .blockBarre {
   max-width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 4%;
-  margin-bottom: 4.3%;
+  margin: 4%;
+  /*display: flex;
+  justify-content: center;*/
+  /*margin-top: 4%;
+  margin-bottom: 4.3%;*/
 }
 .barre {
   justify-content: space-between;
-  width: 86%;
+  width: 100%;
   display: flex;
 }
 
@@ -69,9 +70,11 @@
   .accueil {
     text-transform: uppercase;
     font-size: 12px;
+    height: 14px;
   }
   .about {
     text-transform: uppercase;
     font-size: 12px;
+    height: 14px;
   }
 }
