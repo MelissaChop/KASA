@@ -7,25 +7,17 @@
 }
 .barre {
   justify-content: space-between;
-  /* margin: 40px 20px 40px 50px; */
   width: 100%;
-  /* max-height: 7%; */
   display: flex;
   margin-left: 4%;
   margin-right: 4%;
 }
 
-.LogoHeader {
-  /*max-width: 122px;
-  max-height: 698px;
-  padding-right: 70%;*/
-}
-
 .navBarre {
   display: flex;
   flex-wrap: nowrap;
-  width: 20%;
-  justify-content: space-between;
+  width: 60%;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -35,7 +27,8 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.5em;
-  margin-right: 4%;
+  height: 26px;
+  /* margin-right: 4%;*/
 }
 
 .accueil.active {
@@ -48,8 +41,39 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.5em;
+  font-size: 24px;
+  height: 26px;
+  margin-left: 10%;
 }
 
 .about.active {
   border-bottom: 1px solid #ff6060;
+}
+
+@media all and (max-width: 1200px) {
+  .LogoHeader {
+    width: 160px;
+  }
+  .accueil {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .about {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .LogoHeader {
+    width: 145px;
+  }
+  .accueil {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .about {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
 }

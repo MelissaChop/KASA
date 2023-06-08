@@ -34,3 +34,8 @@
   max-height: 26px;
   margin-bottom: 159px;
 }
+
+@media all and (max-width: 991px) {
+}
+@media all and (max-width: 767px) {
+}

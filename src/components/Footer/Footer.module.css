@@ -19,3 +19,7 @@
   max-height: 46px;
   font-family: "Montserrat", sans-serif;
 }
+@media all and (max-width: 991px) {
+}
+@media all and (max-width: 767px) {
+}

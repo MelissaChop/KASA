@@ -1,12 +1,3 @@
-.blockCard {
-  /* max-width: 340px;
-  max-height: 340px;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-  object-fit: cover;*/
-}
-
 .page {
   display: flex;
   flex-direction: column;
@@ -24,4 +15,9 @@
   margin-top: 43px;
   border-radius: 25px;
   padding-bottom: 2.5%;
+}
+
+@media all and (max-width: 991px) {
+}
+@media all and (max-width: 767px) {
 }
