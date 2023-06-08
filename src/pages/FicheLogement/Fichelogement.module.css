@@ -98,6 +98,18 @@
 }
 
 @media all and (max-width: 991px) {
+  .infos {
+    flex-direction: column;
+  }
+  .divProprietaire {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .divCollapse {
+    margin-bottom: 20px;
+  }
 }
 @media all and (max-width: 767px) {
   .infos {
@@ -107,6 +119,17 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+  }
+  .proprietaire {
+    align-items: center;
+  }
+
+  .picture {
+    max-width: 32px;
+    max-height: 32px;
+  }
+  .noms {
+    font-size: 12px;
   }
   .collapse {
     flex-direction: column;
@@ -125,5 +148,6 @@
     font-size: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
+    border-radius: 5px;
   }
 }

@@ -6,11 +6,16 @@
 }
 
 @media all and (max-width: 991px) {
-}
-@media all and (max-width: 767px) {
+  .etoile {
+    max-width: 20px;
+    max-height: 20px;
+  }
   .rating {
+    gap: 10%;
     justify-content: flex-start;
   }
+}
+@media all and (max-width: 767px) {
   .etoile {
     max-width: 13px;
     max-height: 13px;
