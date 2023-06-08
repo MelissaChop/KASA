@@ -43,7 +43,7 @@
 
   .content {
     font-size: 20px;
-    padding: 5%;
+    /* padding: 5%;*/
   }
 }
 @media all and (max-width: 767px) {
@@ -57,6 +57,6 @@
 
   .content {
     font-size: 12px;
-    padding: 5%;
+    /*padding: 5%;*/
   }
 }

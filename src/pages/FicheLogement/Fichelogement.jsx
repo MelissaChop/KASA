@@ -48,20 +48,26 @@ function FicheLogement() {
             </section>
 
             <section className={style.collapse}>
-              <Collapse
-                key={`description`}
-                collapseTitle={"Description"}
-                collapseContent={logement.description}
-              />
-              <Collapse
-                key={`equipments`}
-                collapseTitle={"Équipements"}
-                collapseContent={logement.equipments.map((equipment, index) => (
-                  <li key={index} className={style.equipement}>
-                    {equipment}
-                  </li>
-                ))}
-              />
+              <div className={style.divCollapse}>
+                <Collapse
+                  key={`description`}
+                  collapseTitle={"Description"}
+                  collapseContent={logement.description}
+                />
+              </div>
+              <div className={style.divCollapse}>
+                <Collapse
+                  key={`equipments`}
+                  collapseTitle={"Équipements"}
+                  collapseContent={logement.equipments.map(
+                    (equipment, index) => (
+                      <li key={index} className={style.equipement}>
+                        {equipment}
+                      </li>
+                    )
+                  )}
+                />
+              </div>
             </section>
           </div>
         )}

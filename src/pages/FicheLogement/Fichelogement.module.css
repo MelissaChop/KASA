@@ -97,4 +97,18 @@
 @media all and (max-width: 991px) {
 }
 @media all and (max-width: 767px) {
+  .infos {
+    flex-direction: column;
+  }
+  .divProprietaire {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .collapse {
+    flex-direction: column;
+    margin-top: 16.5px;
+  }
+  .divCollapse {
+    margin-bottom: 20px;
+  }
 }
