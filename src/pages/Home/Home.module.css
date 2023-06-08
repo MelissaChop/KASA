@@ -18,6 +18,16 @@
 }
 
 @media all and (max-width: 991px) {
+  .blockThumb {
+    background-color: white;
+    display: block;
+    min-width: 95%;
+  }
 }
 @media all and (max-width: 767px) {
+  .blockThumb {
+    background-color: white;
+    max-width: 95%;
+    margin-top: 0px;
+  }
 }

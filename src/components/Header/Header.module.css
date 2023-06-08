@@ -50,6 +50,10 @@
 }
 
 @media all and (max-width: 1200px) {
+  .blockBarre {
+    margin-bottom: 16px;
+  }
+
   .LogoHeader {
     width: 160px;
   }
@@ -65,7 +69,7 @@
 
 @media all and (max-width: 767px) {
   .LogoHeader {
-    width: 145px;
+    width: 115px;
   }
   .accueil {
     text-transform: uppercase;
