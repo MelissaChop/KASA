@@ -13,7 +13,7 @@
   border-radius: 25px 25px;
 }
 
-.texteBanner {
+.divTexte {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,16 +23,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 25px 25px;
+}
+
+.texteBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 25px 25px;
 }
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 1260px) {
+  .texteBanner {
+    font-size: 34px;
+    border-radius: 10px 10px;
+    min-height: 111px;
+  }
+  .imgBanner {
+    border-radius: 10px 10px;
+    min-height: 111px;
+  }
 }
 @media all and (max-width: 767px) {
+  .texteBanner {
+    font-size: 24px;
+    min-width: 100%;
+  }
+
+  .imgBanner {
+    min-width: 100%;
+    height: 40%;
+  }
 }

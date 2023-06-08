@@ -7,10 +7,8 @@
 }
 .barre {
   justify-content: space-between;
-  width: 100%;
+  width: 86%;
   display: flex;
-  margin-left: 4%;
-  margin-right: 4%;
 }
 
 .navBarre {

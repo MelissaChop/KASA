@@ -4,7 +4,9 @@ function Banner(props) {
   return (
     <div className={style.homePage}>
       <img src={props.imgBanner} alt={props.alt} className={style.imgBanner} />
-      <p className={style.texteBanner}>{props.texteBanner}</p>
+      <div className={style.divTexte}>
+        <p className={style.texteBanner}>{props.texteBanner}</p>
+      </div>
     </div>
   );
 }
