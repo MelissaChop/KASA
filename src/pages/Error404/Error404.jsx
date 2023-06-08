@@ -7,7 +7,8 @@ function Error404() {
     <div className={style.pageError}>
       <p className={style.Err404}>404</p>
       <p className={style.textError}>
-        Oups! La page que vous demandez n'existe pas!
+        Oups! La page que <br className={style.saut} /> vous demandez n'existe
+        pas!
       </p>
       <Link to="/" className={style.lien}>
         Retourner sur la page d'accueil
