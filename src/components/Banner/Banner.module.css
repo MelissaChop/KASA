@@ -55,6 +55,7 @@
   }
   .imgBanner {
     border-radius: 10px 10px;
+    min-height: 100%;
     /* min-height: 111px;
     max-width: 100%;*/
   }

@@ -32,6 +32,7 @@
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .proprietaire {
@@ -122,6 +123,7 @@
   }
   .proprietaire {
     align-items: center;
+    margin-top: 10px;
   }
 
   .picture {
@@ -143,6 +145,7 @@
   }
   .location {
     font-size: 14px;
+    margin-bottom: 10px;
   }
   .tag {
     font-size: 10px;
