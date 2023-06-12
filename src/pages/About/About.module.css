@@ -9,8 +9,8 @@
 .collapse {
   /* min-width: 100%;*/
 
-  max-width: 80%;
-  min-width: 80%;
+  max-width: 75%;
+  min-width: 75%;
   margin-top: 31px;
 }
 
@@ -22,8 +22,13 @@
 }
 
 @media all and (max-width: 1200px) {
+  .page {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
   .collapse {
-    min-width: 90%;
+    min-width: 85%;
   }
 }
 @media all and (max-width: 767px) {
