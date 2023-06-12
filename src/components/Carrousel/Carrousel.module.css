@@ -37,6 +37,14 @@
   height: 100%;
 }
 
+.precedenteGauche {
+  cursor: pointer;
+}
+
+.suivanteDroite {
+  cursor: pointer;
+}
+
 .number {
   font-weight: 500;
   font-family: "Montserrat", sans-serif;

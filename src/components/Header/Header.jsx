@@ -13,7 +13,14 @@ function Header() {
   return (
     <div className={style.blockBarre}>
       <nav className={style.barre}>
-        <img src={logoHeader} alt="logo" className={style.LogoHeader} />
+        <NavLink to="/">
+          <img
+            src={logoHeader}
+            alt="logo"
+            className={style.LogoHeader}
+            onClick={() => handleLinkClick("accueil")}
+          />
+        </NavLink>
         <div className={style.navBarre}>
           <NavLink
             to="/"
