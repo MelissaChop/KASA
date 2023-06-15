@@ -49,11 +49,11 @@ function Carrousel({ logementPictures }) {
           </>
         ) : (
           <div className={style.imgContainerSingle}>
-            <img
+            {/* <img
               className={style.singleImage}
               src={logementPictures[0]}
               alt="Logement"
-            />
+        />*/}
           </div>
         )}
       </section>
